@@ -27,9 +27,10 @@
 <body>
   <h1>FizzleNation Timezones</h1>
   
-  <div class="clock" id="clock1"></div>
-  <div class="clock" id="clock2"></div>
-  <div class="clock" id="clock3"></div>
+  <div class="clock" id="clock1">Logan</div>
+  <div class="clock" id="clock2">Fizzle</div>
+  <div class="clock" id="clock3">DangerBG</div>
+  <div class="clock" id="clock4">Sketch494</div>
 
   <script>
     function updateClock(timezone, elementId) {
@@ -40,9 +41,10 @@
     }
 
     setInterval(() => {
-      updateClock('America/New_York', 'clock1');
-      updateClock('Europe/London', 'clock2');
-      updateClock('Asia/Tokyo', 'clock3');
+      updateClock('America/Los_Angeles', 'clock1'); // PST
+      updateClock('Australia/Adelaide', 'clock2'); // ACT
+      updateClock('Etc/GMT+6', 'clock3'); // GMT-6
+      updateClock('America/Denver', 'clock4'); // MST
     }, 1000); // Update every second
   </script>
 </body>
