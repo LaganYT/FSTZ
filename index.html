@@ -48,7 +48,7 @@
   <script>
     function updateClock(timezone, elementId) {
       const now = new Date();
-      const options = { timeZone: timezone, hour12: true, hour: '2-digit', minute: '2-digit' };
+      const options = { timeZone: timezone, hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' };
       const formattedTime = now.toLocaleTimeString('en-US', options);
       document.getElementById(elementId).innerText = document.getElementById(elementId).innerText.split(": ")[0] + ": " + formattedTime;
     }
