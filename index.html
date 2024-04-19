@@ -13,8 +13,14 @@
       padding: 20px;
     }
     
+    .clock-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
     .clock {
-      margin: 20px auto;
       border: 2px solid #ffffff;
       border-radius: 50%;
       width: 250px;
@@ -26,16 +32,18 @@
 </head>
 <body>
   <h1>FizzleNation Timezones</h1>
-  
-  <div class="clock" id="clock1">Logan</div>
-  <div class="clock" id="clock2">Fizzle</div>
-  <div class="clock" id="clock3">Danger</div>
-  <div class="clock" id="clock4">Sketch</div>
-  <div class="clock" id="clock5">Newest</div>
-  <div class="clock" id="clock6">Trolley</div>
-  <div class="clock" id="clock7">Ridger</div>
-  <div class="clock" id="clock8">Darkness</div>
-  <div class="clock" id="clock9">Bisket</div>
+
+  <div class="clock-container">
+    <div class="clock" id="clock1">Logan</div>
+    <div class="clock" id="clock2">Fizzle</div>
+    <div class="clock" id="clock3">Danger</div>
+    <div class="clock" id="clock4">Sketch</div>
+    <div class="clock" id="clock5">Newest</div>
+    <div class="clock" id="clock6">Trolley</div>
+    <div class="clock" id="clock7">Ridger</div>
+    <div class="clock" id="clock8">Darkness</div>
+    <div class="clock" id="clock9">Bisket</div>
+  </div>
 
   <script>
     function updateClock(timezone, elementId) {
@@ -54,7 +62,7 @@
       updateClock('America/Chicago', 'clock6'); // GMT-5
       updateClock('America/New_York', 'clock7'); // GMT-4
       updateClock('America/Los_Angeles', 'clock8'); // PST
-      updateClock('Asia/Shanghai', 'clock9'); // PST
+      updateClock('Asia/Shanghai', 'clock9'); // Alternative Time Zone
     }, 1000); // Update every second
   </script>
 </body>
