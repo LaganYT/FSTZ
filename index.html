@@ -31,6 +31,7 @@
   <div class="clock" id="clock2">Fizzle</div>
   <div class="clock" id="clock3">Danger</div>
   <div class="clock" id="clock4">Sketch</div>
+  <div class="clock" id="clock5">Newest</div>
 
   <script>
     function updateClock(timezone, elementId) {
@@ -45,6 +46,7 @@
       updateClock('Australia/Sydney', 'clock2'); // ACT
       updateClock('Etc/GMT+6', 'clock3'); // GMT-6
       updateClock('America/Denver', 'clock4'); // MST
+      updateClock('Etc/GMT-5', 'clock5'); // GMT-5
     }, 1000); // Update every second
   </script>
 </body>
