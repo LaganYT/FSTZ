@@ -33,6 +33,9 @@
   <div class="clock" id="clock4">Sketch</div>
   <div class="clock" id="clock5">Newest</div>
   <div class="clock" id="clock6">Trolley</div>
+  <div class="clock" id="clock7">Ridger</div>
+  <div class="clock" id="clock8">Darkness</div>
+  <div class="clock" id="clock9">Bisket - ??</div>
 
   <script>
     function updateClock(timezone, elementId) {
@@ -49,6 +52,9 @@
       updateClock('America/Denver', 'clock4'); // MST
       updateClock('America/Chicago', 'clock5'); // GMT-5
       updateClock('America/Chicago', 'clock6'); // GMT-5
+      updateClock('America/New_York', 'clock7'); // GMT-4
+      updateClock('America/Los_Angeles', 'clock8'); // PST
+      updateClock('?', 'clock9'); // PST
     }, 1000); // Update every second
   </script>
 </body>
