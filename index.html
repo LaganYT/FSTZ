@@ -50,7 +50,7 @@
       const now = new Date();
       const options = { timeZone: timezone, hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit', weekday: 'short', month: 'short', day: 'numeric' };
       const formattedTime = now.toLocaleString('en-US', options);
-      document.getElementById(elementId).innerText = document.getElementById(elementId).innerText.split(": ")[0] + ": " + formattedTime;
+      document.getElementById(elementId).innerText = formattedTime + ": " + document.getElementById(elementId).innerText.split(": ")[0];
     }
 
 
