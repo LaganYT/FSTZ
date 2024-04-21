@@ -15,7 +15,7 @@
     
     .clock-container {
       display: flex;
-      /*flex-wrap: wrap;*/
+      flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
@@ -25,8 +25,9 @@
       border-radius: 50%;
       width: 300px;
       height: 300px;
-      line-height: 200px;
+      line-height: 1.2;
       font-size: 24px;
+      text-align: center; /* Center align text */
     }
   </style>
 </head>
@@ -50,7 +51,7 @@
       const now = new Date();
       const options = { timeZone: timezone, hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit', weekday: 'short', month: 'short', day: 'numeric' };
       const formattedTime = now.toLocaleString('en-US', options);
-      document.getElementById(elementId).innerText = document.getElementById(elementId).innerText.split(": ")[0] + ": " + formattedTime;
+      document.getElementById(elementId).innerText = formattedTime + "<br>" + document.getElementById(elementId).innerText.split("<br>")[1];
     }
 
 
