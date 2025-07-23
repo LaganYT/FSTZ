@@ -137,6 +137,35 @@ export default function Home() {
       <style>{`
         ::selection { background: #7ab7ff33; }
         body { background: #181a20; }
+        @media (max-width: 800px) {
+          main {
+            padding: 0 8px;
+          }
+          main > div {
+            flex-direction: column !important;
+            gap: 24px !important;
+            align-items: stretch !important;
+            max-width: 100% !important;
+          }
+          section {
+            min-width: unset !important;
+            width: 100% !important;
+            padding: 20px !important;
+          }
+        }
+        @media (max-width: 500px) {
+          h1 {
+            font-size: 24px !important;
+            margin: 24px 0 16px 0 !important;
+          }
+          h2 {
+            font-size: 18px !important;
+          }
+          section {
+            padding: 12px !important;
+            border-radius: 10px !important;
+          }
+        }
       `}</style>
     </main>
   );
