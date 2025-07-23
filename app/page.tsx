@@ -118,7 +118,7 @@ export default function Home() {
                       style={{ borderRadius: '50%', marginBottom: 12, border: '2px solid #23272f' }}
                     />
                     <span style={{ fontWeight: 500, fontSize: 18, color: '#fff', marginBottom: 4 }}>
-                      {user ? getDisplayName(user) : 'Loading...'}
+                      {user ? `${getDisplayName(user)} (${user.username})` : 'Loading...'}
                     </span>
                     <small style={{ color: '#888', fontSize: 13, marginBottom: 2 }}>({id})</small>
                   </div>
